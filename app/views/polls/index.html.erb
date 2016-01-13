@@ -1,0 +1,11 @@
+<h3>Polls Index</h3>
+
+<a href=<%= new_poll_path %> class='button'>Create New Poll</a>
+
+<div>
+  <ul>
+  <% @polls.map do |poll| %>
+    <li><%= poll.question %></li>
+  <% end %>
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+<h3>Create New Poll</h3>
+<a href=<%= root_path %> class='button'>Return to Polls</a>
+
+<%= form_for(@poll) do |f| %>
+  <!--Quesiton-->
+  <%= f.label :question %>
+  <%= f.text_field :question %>
+
+  <!--Options-->
+  <!--Option One-->
+  <%= f.label :option_one %>
+  <%= f.text_field :option_one %>
+
+  <!--Option Two-->
+  <%= f.label :option_two %>
+  <%= f.text_field :option_two %>
+
+  <!--Option Three-->
+  <%= f.label :option_three %>
+  <%= f.text_field :option_three %>
+
+  <!--Option Four-->
+  <%= f.label :option_four %>
+  <%= f.text_field :option_four %>
+
+  <%= f.submit %>
+<% end %>
+
+
+
+
+
